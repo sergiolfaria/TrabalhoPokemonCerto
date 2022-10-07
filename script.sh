@@ -10,7 +10,10 @@ echo "pokemon 1 escolhido foi:" $poke1
 echo "pokemon 2 escolhido foi:" $poke2
 grep $poke1 pkmStats.txt >> pkm1.txt
 grep $poke2 pkmStats.txt >> pkm2.txt
-if[[]]
+grep $poke1 pkm.txt >> pkm1.txt
+grep $poke2 pkm.txt >> pkm2.txt
+ 
+
 
 
 
