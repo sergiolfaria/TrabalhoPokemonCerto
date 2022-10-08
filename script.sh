@@ -100,13 +100,90 @@ else
    echo "Algo de Errado não está certo por favor reinicie o sistema"
 fi
 
+printf $sumario_poke_2 >>pkm2.txt
+var_info_poke_2=$(grep -i $poke2 ./pkm.txt)
+status_poke_2=$(grep -i $poke2 ./pkmStats.txt)
+read -a info_poke_2 <<<"$var_info_poke_2"
+read -a status_geral_2 <<<"$status_poke_2"
+
+if [ ${info_poke_2[2]} = "Fire" ]; then
+    fraquesa_poke_2=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke_2"
+    sumario_poke_2="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "rock" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Ice" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Grass" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Dragon" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Dark" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Psychic" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Bug" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Flying" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Steel" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Fighting" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Ground" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Ghost" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Poison" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Fairy" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Electric" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Normal" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+elif [ ${info_poke[2]} = "Water" ]; then
+    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
+    read -a fraquesa_info_poke <<<"$fraquesa_poke"
+    sumario_poke_1="Numero:⠀${info_poke[0]}Nome:⠀${info_poke[1]}HP:⠀${status_geral[3]}Ataque:⠀${status_geral[4]}Velocidade:⠀${status_geral[8]}Tipo:⠀${info_poke[2]}fraquesas${fraquesa_info_poke[2]}"
+else
+   echo "Algo de Errado não está certo por favor reinicie o sistema"
+fi
+
 printf $sumario_poke_1 >>pkm1.txt
 
-id_pkm2=$(grep -i $poke2 ./pkm.txt)
-stats_pkm2=$(grep -i $poke2 ./pkmStats.txt)
-read -a id2 <<<"$id_pkm2"
-read -a stats2 <<<"$stats_pkm2"
-descricao2="Numero:⠀${id2[0]}\nNome:⠀${id2[1]}\nHP:⠀${stats2[3]}\nAtaque:⠀${stats2[4]}\nVelocidade:⠀${stats2[8]}\nTipo:⠀${id2[2]}"
 
 
 
