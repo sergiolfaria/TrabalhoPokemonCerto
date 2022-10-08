@@ -1,0 +1,2 @@
+013	Weedle	Weedle	40	35	30	20	20	50	195	32.5
+ #013	Weedle	Bug	Poison

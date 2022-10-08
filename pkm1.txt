@@ -1,0 +1,2 @@
+172	Pichu	Pichu	20	40	15	35	35	60	205	34.17
+ #172	Pichu	Electric	
