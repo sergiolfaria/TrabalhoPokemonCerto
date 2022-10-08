@@ -1,1 +1,1 @@
-Numero:⠀#013Nome:⠀WeedleHP:⠀40Ataque:⠀35Velocidade:⠀50Tipo:⠀Bug fraquesas Ice,
+Numero:_#323_Nome:_Camerupt_HP:_70_Ataque:_100_Velocidade:_40_Tipo:_Fire,Ground_Fraquesas:_Rock
