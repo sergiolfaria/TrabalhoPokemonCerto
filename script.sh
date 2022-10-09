@@ -35,85 +35,28 @@ var_info_poke=$(grep -i $poke1 ./pkm.txt)
 status_poke=$(grep -i $poke1 ./pkmStats.txt)
 read -a info_poke <<<"$var_info_poke"
 read -a status_geral <<<"$status_poke"
+    
+    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
 
-if [ ${info_poke[2]} = "Fire" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "rock" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Ice" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Grass" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Dragon" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Dark" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Psychic" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Bug" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Flying" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Steel" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Fighting" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Ground" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Ghost" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Poison" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Fairy" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Electric" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Normal" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-elif [ ${info_poke[2]} = "Water" ]; then
-    fraquesa_poke=$(grep -i ${info_poke[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke <<<"$fraquesa_poke"
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
-else
-   echo "Algo de Errado não está certo por favor reinicie o sistema"
-fi
+    
+        printf " "$sumario_poke_1 >>pkm1.txt
+while read desvant; do
+
+    if echo "$desvant" | grep -q "${info_poke[2]}"; then
+        
+        read -a atributos_poke_1 <<< "$desvantp"
+        if [ ${atributos_poke_1[0]} != ${info_poke[2]} ]; then
+            printf "${atributos_poke_1[0]},_" >> pkm1.txt
+        fi
+
+    fi
+
+done <pkmAdv.txt
+
+        cat pkm1.txt
+
+
 # escreve no arquivo pkm1.txt e imprime na tela
-printf " "$sumario_poke_1 >>pkm1.txt
-cat pkm1.txt
 
 # forma de pegar as informações nescessarias para entregar o resultado esperado do segundo pokemon
 var_info_poke_2=$(grep -i $poke2 ./pkm.txt)
@@ -121,81 +64,6 @@ status_poke_2=$(grep -i $poke2 ./pkmStats.txt)
 read -a info_poke_2 <<<"$var_info_poke_2"
 read -a status_geral_2 <<<"$status_poke_2"
 
-if [ ${info_poke[2]} = "Fire" ]; then
-    fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "rock" ]; then
-    fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Ice" ]; then
-    fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Grass" ]; then
-    fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Dragon" ]; then
-   fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2""
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Dark" ]; then
-    fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Psychic" ]; then
-    fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Bug" ]; then
-    fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Flying" ]; then
-    fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Steel" ]; then
-   fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Fighting" ]; then
-   fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Ground" ]; then
-   fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Ghost" ]; then
-  fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2""
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Poison" ]; then
-    fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2""
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Fairy" ]; then
-    fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Electric" ]; then
-   fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Normal" ]; then
-  fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2"
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-elif [ ${info_poke[2]} = "Water" ]; then
-    fraquesa_poke_2=$(grep -i ${info_poke_2[2]} ./pkmAdv.txt)
-    read -a fraquesa_info_poke_2 <<<"$fraquesa_poke_2""
-    sumario_poke_2="Numero:_${info_poke_2[0]}_Nome:_${info_poke_2[1]}_HP:_${status_geral_2[3]}_Ataque:_${status_geral_2[4]}_Velocidade:_${status_geral_2[8]}_Tipo:_${info_poke_2[2]},${info_poke_2[3]}_Fraquesas:_${fraquesa_info_poke_2[0]}"
-else
-   echo "Algo de Errado não está certo por favor reinicie o sistema"
-fi
 # escreve no arquivo pkm2.txt e imprime na tela
 printf "\n|------------------------------------------------------------------------------------------------------------|\n"
 printf " "$sumario_poke_2 >>pkm2.txt

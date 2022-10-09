@@ -1,1 +1,1 @@
-Numero:_#006_Nome:_Charizard_HP:_78_Ataque:_84_Velocidade:_100_Tipo:_Fire,Flying_Fraquesas:_Rock
+ Numero:_#006_Nome:_Charizard_HP:_78_Ataque:_84_Velocidade:_100_Tipo:_Fire,Flying_Fraquesas:_Rock,⠀Ground,⠀Water,⠀
