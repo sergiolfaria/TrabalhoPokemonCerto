@@ -36,7 +36,7 @@ status_poke=$(grep -i $poke1 ./pkmStats.txt)
 read -a info_poke <<<"$var_info_poke"
 read -a status_geral <<<"$status_poke"
     
-    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_${fraquesa_info_poke[0]}"
+    sumario_poke_1="Numero:_${info_poke[0]}_Nome:_${info_poke[1]}_HP:_${status_geral[3]}_Ataque:_${status_geral[4]}_Velocidade:_${status_geral[8]}_Tipo:_${info_poke[2]},${info_poke[3]}_Fraquesas:_}"
 
     
         printf " "$sumario_poke_1 >>pkm1.txt
