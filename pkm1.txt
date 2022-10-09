@@ -1,1 +1,1 @@
- Numero:_#006_Nome:_Charizard_HP:_78_Ataque:_84_Velocidade:_100_Tipo:_Fire,Flying_Fraquesas:_}Rock,_Ice,_Ground,_Water,_Electric,_
+ Numero:_#004_Nome:_Charmander_HP:_39_Ataque:_52_Velocidade:_65_Tipo:_Fire,_Fraquesas:_}Rock,_Ground,_Water,_

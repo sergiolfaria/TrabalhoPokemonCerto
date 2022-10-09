@@ -1,1 +1,1 @@
- Numero:_#015_Nome:_Beedrill_HP:_65_Ataque:_90_Velocidade:_75_Tipo:_Bug,Poison_Fraquesas:_}Rock,_Psychic,_Flying,_Fire,_Ground,_
+ Numero:_#013_Nome:_Weedle_HP:_40_Ataque:_35_Velocidade:_50_Tipo:_Bug,Poison_Fraquesas:_}Rock,_Psychic,_Flying,_Fire,_Ground,_
