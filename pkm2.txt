@@ -1,0 +1,1 @@
+ Numero:_#004_Nome:_Charmander_HP:_39_Ataque:_52_Velocidade:_65_Tipo:_Fire,_Fraquesas:_Rock

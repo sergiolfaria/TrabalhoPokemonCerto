@@ -1,1 +1,1 @@
-Numero:_#015_Nome:_Beedrill_HP:_65_Ataque:_90_Velocidade:_75_Tipo:_Bug,Poison_Fraquesas:_Rock
+Numero:_#006_Nome:_Charizard_HP:_78_Ataque:_84_Velocidade:_100_Tipo:_Fire,Flying_Fraquesas:_Rock
