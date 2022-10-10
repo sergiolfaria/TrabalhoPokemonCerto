@@ -1,1 +1,1 @@
- Numero:_#013_Nome:_Weedle_HP:_40_Ataque:_35_Velocidade:_50_Tipo:_Bug,Poison_Fraquesas:_}Rock,_Psychic,_Flying,_Fire,_Ground,_
+ Nome:⠀Pichu⠀/Numero:⠀#172⠀/Nome:⠀Pichu⠀/HP:⠀20⠀/Ataque:⠀40⠀/Velocidade:⠀60⠀/Tipo:⠀Electric,⠀Fraquesas:Ground,

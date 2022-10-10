@@ -1,1 +1,1 @@
- Numero:_#004_Nome:_Charmander_HP:_39_Ataque:_52_Velocidade:_65_Tipo:_Fire,_Fraquesas:_}Rock,_Ground,_Water,_
+ Nome:⠀Charmander/Numero:⠀#004/Nome:⠀Charmander/HP:⠀39/Ataque:⠀52/Velocidade:⠀65/Tipo:⠀Fire,⠀Fraquesas:Rock,⠀Ground,⠀Water,⠀
