@@ -32,7 +32,7 @@ status_poke=$(grep -i $poke1 ./pkmStats.txt)
 read -a info_poke <<<"$var_info_poke"
 read -a status_geral <<<"$status_poke"
 # escreve no arquivo pkm1.txt e imprime na tela
-sumario_poke_1="Nome:⠀${status_geral[1]}/Numero:⠀${info_poke[0]}/Nome:⠀${info_poke[1]}/HP:⠀${status_geral[3]}/Ataque:⠀${status_geral[4]}/Velocidade:⠀${status_geral[8]}/Tipo:⠀${info_poke[2]},${info_poke[3]}⠀Fraquesas:"
+sumario_poke_1="/Numero:⠀${info_poke[0]}/Nome:⠀${info_poke[1]}/HP:⠀${status_geral[3]}/Ataque:⠀${status_geral[4]}/Velocidade:⠀${status_geral[8]}/Tipo:⠀${info_poke[2]},${info_poke[3]}⠀Fraquesas:"
 printf " "$sumario_poke_1 >>pkm1.txt
 #while que resolve as fraquesas dos pokemons
 while read desvant; do
@@ -65,7 +65,7 @@ read -a info_poke_2 <<<"$var_info_poke_2"
 read -a status_geral_2 <<<"$status_poke_2"
 
 # escreve no arquivo pkm2.txt e imprime na tela
-sumario_poke_2="Nome:⠀${status_geral_2[1]}⠀/Numero:⠀${info_poke_2[0]}⠀/Nome:⠀${info_poke_2[1]}⠀/HP:⠀${status_geral_2[3]}⠀/Ataque:⠀${status_geral_2[4]}⠀/Velocidade:⠀${status_geral_2[8]}⠀/Tipo:⠀${info_poke_2[2]},${info_poke_2[3]}⠀Fraquesas:"
+sumario_poke_2="⠀/Numero:⠀${info_poke_2[0]}⠀/Nome:⠀${info_poke_2[1]}⠀/HP:⠀${status_geral_2[3]}⠀/Ataque:⠀${status_geral_2[4]}⠀/Velocidade:⠀${status_geral_2[8]}⠀/Tipo:⠀${info_poke_2[2]},${info_poke_2[3]}⠀Fraquesas:"
 printf " "$sumario_poke_2 >>pkm2.txt
 while read desvant_2; do
 
