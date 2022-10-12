@@ -1,1 +1,1 @@
- Nome:⠀Weedle⠀/Numero:⠀#013⠀/Nome:⠀Weedle⠀/HP:⠀40⠀/Ataque:⠀35⠀/Velocidade:⠀50⠀/Tipo:⠀Bug,Poison⠀Fraquesas:Rock,Psychic,Flying,Fire,Ground,
+ ⠀/Numero:⠀#013⠀/Nome:⠀Weedle⠀/HP:⠀40⠀/Ataque:⠀35⠀/Velocidade:⠀50⠀/Tipo:⠀Bug,Poison⠀Fraquesas:Rock,Psychic,Flying,Fire,Ground,

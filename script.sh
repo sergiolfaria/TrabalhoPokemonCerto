@@ -65,7 +65,7 @@ read -a info_poke_2 <<<"$var_info_poke_2"
 read -a status_geral_2 <<<"$status_poke_2"
 
 # escreve no arquivo pkm2.txt e imprime na tela
-sumario_poke_2="⠀/Numero:⠀${info_poke_2[0]}⠀/Nome:⠀${info_poke_2[1]}⠀/HP:⠀${status_geral_2[3]}⠀/Ataque:⠀${status_geral_2[4]}⠀/Velocidade:⠀${status_geral_2[8]}⠀/Tipo:⠀${info_poke_2[2]},${info_poke_2[3]}⠀Fraquesas:"
+sumario_poke_2="/Numero:⠀${info_poke_2[0]}⠀/Nome:⠀${info_poke_2[1]}⠀/HP:⠀${status_geral_2[3]}⠀/Ataque:⠀${status_geral_2[4]}⠀/Velocidade:⠀${status_geral_2[8]}⠀/Tipo:⠀${info_poke_2[2]},${info_poke_2[3]}⠀Fraquesas:"
 printf " "$sumario_poke_2 >>pkm2.txt
 while read desvant_2; do
 
